@@ -3,7 +3,7 @@
 # All rights reserved
 
 # Variables.
-FVTT_VERSION=0.8.8
+FVTT_VERSION=0.8.9
 
 echo " "
 echo "Current FoundryVTT Release version is ${FVTT_VERSION}."
@@ -20,6 +20,6 @@ chmod +x /foundry/
 echo "INFO ! Starting FoundryVTT Server"
 echo " "
 # exec node /foundry/fvtt/resources/app/main.js --dataPath=/foundry/data
-su foundry -c 'node /foundry/fvtt/resources/app/main.js --dataPath=/foundry/data'
+su foundry -c 'node /foundry/fvtt/resources/app/main.js --dataPath=/foundry/data --ignore-gpu-blacklist'
 
 exit
